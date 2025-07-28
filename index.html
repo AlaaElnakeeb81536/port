@@ -24,11 +24,46 @@
         margin: auto;
         padding: 20px;
     }
-    h2 {
-        color: #333;
-        margin: 20px 0;
-        font-size: 22px;
+    .about-section {
+        background: #fff;
+        border-radius: 10px;
+        padding: 30px;
+        margin: 20px auto;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         text-align: center;
+    }
+    .about-section img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 15px;
+        border: 4px solid #4CAF50;
+    }
+    .about-section h2 {
+        color: #4CAF50;
+        margin-bottom: 10px;
+    }
+    .about-section p {
+        font-size: 18px;
+        color: #555;
+        line-height: 1.6;
+    }
+    .social-links a {
+        display: inline-block;
+        margin: 10px;
+        width: 40px;
+        height: 40px;
+        background: #4CAF50;
+        color: white;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        font-size: 18px;
+        transition: 0.3s;
+    }
+    .social-links a:hover {
+        background: #388e3c;
     }
     .section-title {
         font-size: 26px;
@@ -49,6 +84,10 @@
         margin-bottom: 30px;
         text-align: center;
         padding-bottom: 20px;
+        transition: transform 0.3s;
+    }
+    .card:hover {
+        transform: scale(1.03);
     }
     .card img {
         width: 100%;
@@ -64,6 +103,10 @@
         text-decoration: none;
         border-radius: 5px;
         font-weight: bold;
+        transition: 0.3s;
+    }
+    .card a:hover {
+        background: #388e3c;
     }
     footer {
         text-align: center;
@@ -73,6 +116,8 @@
         margin-top: 50px;
     }
 </style>
+<!-- Font Awesome for icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -81,11 +126,26 @@
     <p>Data Analyst | BI Developer</p>
 </header>
 
+<!-- About Me Section -->
+<div class="about-section">
+    <img src="https://via.placeholder.com/120" alt="Profile Photo">
+    <h2>About Me</h2>
+    <p>
+        I am a passionate <strong>Data Analyst</strong> and <strong>BI Developer</strong> with expertise in creating insightful dashboards and reports using <strong>Power BI</strong> and <strong>Tableau</strong>. 
+        I love turning raw data into actionable insights to drive decision-making. Skilled in <strong>SQL,POwer Bi , Tableau , Python, Visualization, and Data Modeling</strong>.
+    </p>
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/alaaelnakeeb" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/AlaaElnakeeb81536" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="mailto:alaaelnakeeb81@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://medium.com/@alaaelnakeeb81" target="_blank"><i class="fab fa-medium-m"></i></a>
+    </div>
+</div>
+
 <div class="container">
 
 <!-- Tableau Section -->
 <div class="section-title tableau">📊 Tableau Dashboards</div>
-
 <h2>HR Dashboard</h2>
 <div class="card">
     <img src="https://raw.githubusercontent.com/AlaaElnakeeb81536/port/main/hr.jpg" alt="HR Dashboard">
@@ -100,14 +160,13 @@
 
 <!-- Power BI Section -->
 <div class="section-title powerbi">📈 Power BI Projects</div>
-
 <h2>Adventure Works (Power BI)</h2>
 <div class="card">
     <img src="https://raw.githubusercontent.com/AlaaElnakeeb81536/port/main/advent.png" alt="Adventure Works">
     <a href="https://github.com/AlaaElnakeeb81536/End_to_End_Adventure_Work" target="_blank">View Project</a>
 </div>
 
-<h2>Virtual PWC Internship Dashboard</h2>
+<h2>Virtual PWC Internship Dashboards</h2>
 <div class="card">
     <img src="https://raw.githubusercontent.com/AlaaElnakeeb81536/port/main/pwc.avif" alt="PWC Power BI">
     <a href="https://github.com/AlaaElnakeeb81536/PWC_V.Intern_UsingPowerPI" target="_blank">View Project</a>
@@ -121,7 +180,6 @@
 
 <!-- Medium Section -->
 <div class="section-title medium">✍ Medium Articles</div>
-
 <h2>Time Series Join in Snowflake</h2>
 <div class="card">
     <img src="https://raw.githubusercontent.com/AlaaElnakeeb81536/port/main/snow.jpeg" alt="Snowflake Join">
