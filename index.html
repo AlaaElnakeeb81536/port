@@ -11,27 +11,59 @@
         padding: 0;
         background: #f8f9fa;
         color: #333;
-        text-align: center;
     }
     header {
         background: #4CAF50;
         color: white;
-        padding: 30px;
+        text-align: center;
+        padding: 40px 20px;
+    }
+    header h1 { margin: 10px 0; }
+    .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
     }
     h2 {
         color: #4CAF50;
         margin-top: 40px;
+        text-align: center;
     }
-    .dashboard {
-        margin: 30px auto;
-        width: 95%;
-        max-width: 1200px;
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+        margin-top: 20px;
     }
-    iframe {
+    .card {
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        text-align: center;
+        padding-bottom: 15px;
+    }
+    .card img {
         width: 100%;
-        height: 800px;
-        border: none;
-        margin-bottom: 40px;
+        height: 180px;
+        object-fit: cover;
+    }
+    .card a {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 20px;
+        background: #4CAF50;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: #333;
+        color: white;
+        margin-top: 50px;
     }
 </style>
 </head>
@@ -42,15 +74,53 @@
     <p>Data Analyst | BI Developer</p>
 </header>
 
-<h2>HR Dashboard</h2>
-<div class="dashboard">
-    <iframe src="https://public.tableau.com/views/hrtableau_17233389199700/Story1?:showVizHome=no&embed=true"></iframe>
+<div class="container">
+
+<h2>Tableau Dashboards</h2>
+<div class="cards">
+    <div class="card">
+        <img src="https://via.placeholder.com/300x180?text=HR+Dashboard" alt="HR Dashboard">
+        <a href="https://public.tableau.com/views/hrtableau_17233389199700/Story1?:showVizHome=no&embed=true" target="_blank">View Dashboard</a>
+    </div>
+    <div class="card">
+        <img src="https://via.placeholder.com/300x180?text=Baraa+Dashboard" alt="Baraa Dashboard">
+        <a href="https://public.tableau.com/views/Baraa_17241134812960/Dashboard1?:showVizHome=no&embed=true" target="_blank">View Dashboard</a>
+    </div>
 </div>
 
-<h2>Baraa Dashboard</h2>
-<div class="dashboard">
-    <iframe src="https://public.tableau.com/views/Baraa_17241134812960/Dashboard1?:showVizHome=no&embed=true"></iframe>
+<h2>Bower BI Projects</h2>
+<div class="cards">
+    <div class="card">
+        <img src="https://via.placeholder.com/300x180?text=Adventure+Works" alt="Adventure Works">
+        <a href="https://github.com/AlaaElnakeeb81536/End_to_End_Adventure_Work" target="_blank">View Project</a>
+    </div>
+    <div class="card">
+        <img src="https://via.placeholder.com/300x180?text=PWC+Power+BI" alt="PWC Power BI">
+        <a href="https://github.com/AlaaElnakeeb81536/PWC_V.Intern_UsingPowerPI" target="_blank">View Project</a>
+    </div>
+    <div class="card">
+        <img src="https://via.placeholder.com/300x180?text=Maxico+Toy+Sales" alt="Maxico Toy Sales">
+        <a href="https://github.com/AlaaElnakeeb81536/maxico_toy_sales" target="_blank">View Project</a>
+    </div>
 </div>
+
+<h2>Medium Articles</h2>
+<div class="cards">
+    <div class="card">
+        <img src="https://via.placeholder.com/300x180?text=Snowflake+Asof+Join" alt="Snowflake Join">
+        <a href="https://medium.com/@alaaelnakeeb81/time-series-data-joining-using-the-snowflake-asof-join-fd936f0849d7" target="_blank">Read Article</a>
+    </div>
+    <div class="card">
+        <img src="https://via.placeholder.com/300x180?text=Storytelling+with+Data" alt="Storytelling with Data">
+        <a href="https://medium.com/@alaaelnakeeb81/book-summary-storytelling-with-data-5934c3082e01" target="_blank">Read Article</a>
+    </div>
+</div>
+
+</div>
+
+<footer>
+    <p>&copy; 2025 Alaa Elnakeeb. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
