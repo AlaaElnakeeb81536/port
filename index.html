@@ -9,7 +9,7 @@
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
-        background: #f9f9f9;
+        background: #f8f9fa;
         color: #333;
         text-align: center;
     }
@@ -18,21 +18,20 @@
         color: white;
         padding: 30px;
     }
-    nav a {
-        margin: 10px;
-        text-decoration: none;
-        color: white;
-        font-weight: bold;
+    h2 {
+        color: #4CAF50;
+        margin-top: 40px;
     }
-    .projects a {
-        display: inline-block;
-        margin: 20px;
-        padding: 15px 25px;
-        background: #4CAF50;
-        color: white;
-        text-decoration: none;
-        border-radius: 8px;
-        font-size: 18px;
+    .dashboard {
+        margin: 30px auto;
+        width: 95%;
+        max-width: 1200px;
+    }
+    iframe {
+        width: 100%;
+        height: 800px;
+        border: none;
+        margin-bottom: 40px;
     }
 </style>
 </head>
@@ -43,13 +42,15 @@
     <p>Data Analyst | BI Developer</p>
 </header>
 
-<section>
-    <h2>My Tableau Dashboards</h2>
-    <div class="projects">
-        <a href="hr.html">HR Dashboard</a>
-        <a href="Sales.html">Baraa Dashboard</a>
-    </div>
-</section>
+<h2>HR Dashboard</h2>
+<div class="dashboard">
+    <iframe src="https://public.tableau.com/views/hrtableau_17233389199700/Story1?:showVizHome=no&embed=true"></iframe>
+</div>
+
+<h2>Baraa Dashboard</h2>
+<div class="dashboard">
+    <iframe src="https://public.tableau.com/views/Baraa_17241134812960/Dashboard1?:showVizHome=no&embed=true"></iframe>
+</div>
 
 </body>
 </html>
